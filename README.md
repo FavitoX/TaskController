@@ -1,2 +1,2 @@
 # TaskController
-Application to track used time in tasks
+Application to control the time spent on each task.
