@@ -1,0 +1,19 @@
+﻿<Window x:Class="TaskController.wTaskList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskController"
+        mc:Ignorable="d" ResizeMode="NoResize" WindowStyle="None" Loaded="Window_Loaded" Topmost="True"
+        Title="wTaskList" Height="165" Width="595">
+    <Grid>
+        <ListView Name="lstTaskView" MouseDoubleClick="ListView_MouseDoubleClick" Margin="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Start" Width="135" DisplayMemberBinding="{Binding Start}" />
+                    <GridViewColumn Header="Task" Width="450" DisplayMemberBinding="{Binding Description}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
